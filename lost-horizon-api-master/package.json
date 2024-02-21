@@ -1,0 +1,49 @@
+{
+    "name": "lost-horizon-api",
+    "version": "0.0.1",
+    "description": "lost horizon api",
+    "main": "server.js",
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "debug": "nodemon --inspect server.js",
+        "pm2-prod-aws": "pm2 start processes.json --no-daemon --env production_aws",
+        "pm2-prod": "pm2 start processes.json --no-daemon --env production",
+        "pm2-dev": "pm2 start processes.json --no-daemon"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "convert-excel-to-json": "^1.7.0",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "eslint-plugin-react-hooks": "^4.3.0",
+        "express": "^4.17.1",
+        "express-mongo-sanitize": "^2.1.0",
+        "express-rate-limit": "^5.5.1",
+        "helmet": "^4.6.0",
+        "hpp": "^0.2.3",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.13.14",
+        "morgan": "^1.10.0",
+        "pm2": "^5.2.0",
+        "slugify": "^1.6.2",
+        "tunnel-ssh": "^4.1.6",
+        "validator": "^13.7.0",
+        "xss-clean": "^0.1.1"
+    },
+    "devDependencies": {
+        "eslint": "^8.2.0",
+        "eslint-config-airbnb": "^19.0.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-react": "^7.27.0",
+        "prettier": "^2.4.1"
+    }
+}

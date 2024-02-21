@@ -1,0 +1,18 @@
+{
+	"version": "0.2.0",
+	"configurations": [{
+		"console": "integratedTerminal",
+		"name": "Nodemon",
+		"program": "${workspaceFolder}/server.js",
+		"request": "launch",
+		"restart": true,
+		"runtimeExecutable": "nodemon",
+		"skipFiles": [
+			"<node_internals>/**",
+			"${workspaceFolder}/<node_internals>/**",
+			"${workspaceFolder}/node_modules/**"
+		],
+		"type": "node",
+	}],
+	"compounds": []
+}

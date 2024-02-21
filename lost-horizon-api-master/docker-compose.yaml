@@ -1,0 +1,22 @@
+version: '3.5'
+
+networks:
+   lost-horizon-backend:
+    driver: bridge
+
+services:
+  lost-horizon-api:
+    container_name: lost-horizon-api
+    image: ${DOCKER_IMAGE}:${VERSION}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - lost-horizon-backend
+    restart: unless-stopped
+    ports:
+      - 4000:4000
+    command:
+      - npm
+      - run
+      - pm2-prod-aws

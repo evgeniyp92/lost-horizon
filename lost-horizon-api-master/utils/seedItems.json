@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Avery, white note cards",
+    "partNumber": "5315",
+    "cost": 13.97,
+    "quantity": 19,
+    "location": ["19", "A", "001", "A", "001"],
+    "EOLDate": "2025-01-01"
+  },
+  {
+    "name": "FLIR EST Advanced Thermal Camera",
+    "partNumber": "78521-2102",
+    "cost": 7759,
+    "quantity": 1,
+    "location": ["19", "A", "001", "A", "002"],
+    "EOLDate": "2030-01-01"
+  },
+  {
+    "name": "Monitor mounts",
+    "partNumber": "KSA1024B",
+    "cost": 54.99,
+    "quantity": 33,
+    "location": ["19", "A", "001", "C", "005", "D"],
+    "EOLDate": "2037-01-01"
+  },
+  {
+    "name": "EPSON Stylus Pro 9800",
+    "partNumber": "K132A",
+    "cost": 2000,
+    "quantity": 1,
+    "location": ["19", "A", "001", "A", "001"],
+    "EOLDate": "2028-06-15"
+  },
+  {
+    "name": "SFP Media Converter",
+    "partNumber": "852190322033",
+    "cost": 334,
+    "quantity": 2,
+    "location": ["03", "A", "004", "C", "008"],
+    "EOLDate": "2025-01-01"
+  }
+]

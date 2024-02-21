@@ -1,0 +1,39 @@
+{
+	"apps": [
+	    {
+		"name": "lost-horizon-api",
+		"script": "server.js",
+		"merge_logs": true,
+		"max_restarts": 20,
+		"instances": 4,
+		"max_memory_restart": "200M",
+		"env": {
+		    "PORT": 4000,
+		    "NODE_ENV": "development",
+		    "DB_ADM_USER": "dbAdmin",
+		    "DB_ADM_PASS": "HAvPn0DCqkF1JARJ",
+		    "DB_CONNECTION" : "mongodb+srv://dbAdmin:<PASSWORD>@lost-horizon.eebtg.mongodb.net/lost-horizon?retryWrites=true&w=majority",
+		    "DB_CONNECTION_AWS" : "mongodb://dbAdmin:<PASSWORD>@localhost:27017/lost-horizon?retryWrites=false",
+		    "JWT_SECRET": "90Autw45Jtg65sH87Ghfgd3456EKJy6reR534HF12"
+		},
+		"env_production": {
+		    "PORT": 4000,
+		    "NODE_ENV": "production",
+		    "DB_ADM_USER": "dbAdmin",
+		    "DB_ADM_PASS": "HAvPn0DCqkF1JARJ",
+		    "DB_CONNECTION" : "mongodb+srv://dbAdmin:<PASSWORD>@lost-horizon.eebtg.mongodb.net/lost-horizon?retryWrites=true&w=majority",
+		    "DB_CONNECTION_AWS" : "mongodb://dbAdmin:<PASSWORD>@localhost:27017/lost-horizon?retryWrites=false",
+		    "JWT_SECRET": "90Autw45Jtg65sH87Ghfgd3456EKJy6reR534HF12"
+		},
+		"env_production_aws": {
+		    "PORT": 4000,
+		    "NODE_ENV": "production",
+		    "DB_ADM_USER": "dbAdmin",
+		    "DB_ADM_PASS": "HAvPn0DCqkF1JARJ",
+		    "DB_CONNECTION" : "mongodb+srv://dbAdmin:<PASSWORD>@lost-horizon.eebtg.mongodb.net/lost-horizon?retryWrites=true&w=majority",
+		    "DB_CONNECTION_AWS" : "mongodb://dbAdmin:<PASSWORD>@lost-horizon-db.crlcgfdrihfs.us-gov-west-1.docdb.amazonaws.com/lost-horizon?retryWrites=false",
+		    "JWT_SECRET": "90Autw45Jtg65sH87Ghfgd3456EKJy6reR534HF12"
+		}
+	    }
+	]
+}
